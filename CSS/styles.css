@@ -361,6 +361,10 @@ nav{
     height: 100%;
     object-fit: cover;
 }
+.proximos-talleres{
+    text-align: center;
+    color: #b2089c;
+}
 /*fin talleres*/
 /*nosotros*/
 .quienes-somos{
