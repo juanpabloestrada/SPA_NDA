@@ -282,11 +282,6 @@ nav{
 .boton:active{
     background-color: rgb(88, 4, 111);
 }
-.mapa{
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-}
 /*fin registro*/
 
 /*talleres*/
