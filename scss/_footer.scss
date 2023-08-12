@@ -1,0 +1,16 @@
+.pie-de-pagina{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-content: center;
+    color: rgb(31, 2, 42);
+    padding: 20px;
+    background-color: #f79cef;
+    align-items: center;
+    text-align: center;
+    nuestras-redes{
+        font-size: 450px;
+    }
+    info-contacto{
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,46 @@
+.formulario{
+    width: 478px;
+    border: 2px solid rgb(62, 3, 86);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+.formulario input{
+    padding: 8px;
+    border-radius: 15px;
+}
+.formulario input:focus{
+    border: 3px solid #b2089c;
+    outline: none;
+}
+.formulario .mensaje-contacto:focus{
+    border: 3px solid #b2089c;
+    outline: none;
+}
+.registro{
+    width: 100px;
+    height: 700px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    flex-direction: column;
+    margin: 15px;
+}
+.formulario button{
+    width: 80px;
+    height: 30px;
+    color: white;
+    background-color: #e458d9;
+    margin: 5px;
+    border-color: rgb(79, 13, 77);
+    border-radius: 5px;
+}
+.politica-privacidad:visited{
+    color: rgb(95, 26, 185);
+}
+.boton:active{
+    background-color: rgb(88, 4, 111);
+}

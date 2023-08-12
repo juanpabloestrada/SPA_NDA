@@ -1,25 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@600&display=swap");
-/* header y nav*/
 * {
   margin: 0px;
   padding: 0px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   box-sizing: border-box;
-}
-
-h1 {
-  color: darkorchid;
-  font-size: 50px;
-  text-align: center;
-  font-weight: bold;
-  font-family: "Belanosima", sans-serif;
-  margin: 5px;
-  padding-top: 10px;
-}
-
-header h2 {
-  color: rgb(119, 11, 228);
-  font-size: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 nav {
@@ -39,13 +23,13 @@ nav {
 
 @media (max-width: 768px) {
   .navegador {
-    background-color: #cc4bea;
+    background-color: #7649e7;
     z-index: 2;
   }
   .navegador .fa-bars {
     margin: 10px;
     font-size: 35px;
-    color: #27021b;
+    color: #2e045f;
     order: -1;
     display: block;
   }
@@ -81,84 +65,17 @@ nav {
   align-items: center;
 }
 .navegador ul li a {
-  color: rgb(96, 21, 62);
+  color: rgb(117, 4, 158);
   text-decoration: none;
   padding: 10px;
   text-decoration: solid;
 }
-
-.spanda-header {
+.navegador img {
   width: 60px;
   height: 60px;
   object-fit: cover;
   border-radius: 50px;
   margin: 5px;
-}
-
-.carousel-item {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-/*.... fin header y nav....*/
-/*body*/
-body {
-  background-image: url(../multimedia/img/fondo\ de\ pantalla.jpeg);
-}
-
-/*main*/
-.pagina-principal {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-.musica {
-  width: 300px;
-  border-radius: 5px;
-  margin: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  align-items: center;
-}
-
-.imagen-productos {
-  border-radius: 5px;
-  width: 100%;
-}
-
-.velas-main {
-  width: 600px;
-  height: 600px;
-  object-fit: cover;
-}
-
-/*whats*/
-.spa-whats {
-  position: fixed;
-  height: 55px;
-  width: 55px;
-  line-height: 55px;
-  bottom: 30px;
-  right: 30px;
-  background: rgb(246, 4, 166);
-  color: azure;
-  border-radius: 50px;
-  text-align: center;
-  font-size: 40px;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
-  z-index: 100;
-  object-fit: cover;
-}
-
-.spa-whats:hover {
-  text-decoration: none;
-  color: rgb(246, 4, 166);
-  background: white;
 }
 
 /*fin spa whats*/
@@ -260,8 +177,29 @@ body {
   background-color: rgb(88, 4, 111);
 }
 
-/*fin prodductos*/
-/*registro*/
+.spa-whats {
+  position: fixed;
+  height: 55px;
+  width: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  right: 30px;
+  background: rgb(194, 15, 194);
+  color: azure;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 40px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  object-fit: cover;
+}
+
+.spa-whats:hover {
+  text-decoration: none;
+  color: rgb(246, 4, 166);
+  background: white;
+}
+
 .formulario {
   width: 478px;
   border: 2px solid rgb(62, 3, 86);
@@ -316,8 +254,6 @@ body {
   background-color: rgb(88, 4, 111);
 }
 
-/*fin registro*/
-/*talleres*/
 .video-danza {
   display: flex;
   align-items: center;
@@ -411,8 +347,30 @@ body {
   color: #b2089c;
 }
 
-/*fin talleres*/
-/*nosotros*/
+.pagina-principal {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.musica {
+  width: 300px;
+  border-radius: 5px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+
+.carousel-item {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
 .quienes-somos {
   justify-content: space-around;
   margin: 15px;
@@ -428,8 +386,6 @@ body {
   margin: 15px;
 }
 
-/*fin nosotros*/
-/*footer*/
 .pie-de-pagina {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -440,15 +396,15 @@ body {
   align-items: center;
   text-align: center;
 }
-
-.info-contacto {
+.pie-de-pagina nuestras-redes {
+  font-size: 450px;
+}
+.pie-de-pagina info-contacto {
   font-size: 15px;
 }
 
-.pie-de-pagina .nuestras-redes {
-  font-size: 450px;
+body {
+  background-image: url(../multimedia/img/fondo\ de\ pantalla.jpeg);
 }
-
-/*...fin footer...*/
 
 /*# sourceMappingURL=styles.css.map */

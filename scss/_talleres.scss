@@ -1,0 +1,80 @@
+.video-danza{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+.grid-padre{
+    display: grid;
+    margin: 10px;
+    gap: 10px;
+    object-fit: cover;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: repeat(6, 200px);
+    grid-template-areas: "img1 img1 img2 img3"
+                         "img1 img1 img4 img4"
+                         "img5 img7 img7 img8"
+                         "img6 img7 img7 img8"
+                         "img9 img9 img9 img8"
+                         "img10 img11 img11 img12";
+}
+.img1{
+    grid-area: img1;
+    background-image: url(../multimedia/img/Spanda.jpg);
+    background-size: cover;
+    color: rgb(216, 11, 79);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+.img1 h3{
+    font-size: 32px;
+}
+.img1 p{
+    font-size: 20px;
+    text-align: center;
+}
+.img2{
+    grid-area: img2;
+}
+.img3{
+    grid-area: img3;
+}
+.img4{
+    grid-area: img4;
+}
+.img5{
+    grid-area: img5;
+}
+.img6{
+    grid-area: img6;
+}
+.img7{
+    grid-area: img7;
+}
+.img8{
+    grid-area: img8;
+}
+.img9{
+    grid-area: img9;
+}
+.img10{
+    grid-area: img10;
+}
+.img11{
+    grid-area: img11;
+}
+.img12{
+    grid-area: img12;
+}
+.grid-padre img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.proximos-talleres{
+    text-align: center;
+    color: #b2089c;
+}
