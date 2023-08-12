@@ -27,75 +27,28 @@
     gap: 10px;
     align-items: baseline;
     /*overflow-y: scroll;*/
+    h4 {
+        font-size: 20px;
+      }
+      p {
+        color: rgb(80, 60, 164);
+      }
+      ul li {
+        list-style: none;
+      }
+      button {
+        background-color: rgb(247, 93, 175);
+        color: #fff;
+        padding: 5px;
+        margin: 5px;
+        border: none;
+        border-radius: 5px;
+        width: 100%;
+        object-fit: center;
+      }
+      img{
+        width: 220px;
+        height: 200px;
+        object-fit: cover;
+      }
   }
-  
-  .productos-venta h4 {
-    font-size: 20px;
-  }
-  
-  .productos-venta p {
-    color: rgb(80, 60, 164);
-  }
-  
-  .productos-venta ul li {
-    list-style: none;
-  }
-  
-  .productos-venta button {
-    background-color: rgb(247, 93, 175);
-    color: #fff;
-    padding: 5px;
-    margin: 5px;
-    border: none;
-    border-radius: 5px;
-    width: 100%;
-    object-fit: center;
-  }
-  
-  .imagen-productos {
-    width: 220px;
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .tarjeta {
-    width: 250px;
-    border: 2px solid #eeb4ef;
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    background-color: rgb(246, 231, 243);
-    padding: 10px;
-  }
-  
-  .tarjeta__titulo {
-    font-size: 20px;
-    text-align: start;
-  }
-  
-  .tarjeta__parrafo {
-    padding: 10px;
-    font-size: 15px;
-    text-align: start;
-  }
-  
-  .tarjeta__logo {
-    width: 100%;
-  }
-  
-  .tarjeta__boton {
-    text-decoration: none;
-    background-color: rgb(247, 93, 175);
-    color: #fff;
-    padding: 5px;
-    margin: 5px;
-    border: none;
-    border-radius: 5px;
-  }
-  
-  .tarjeta__boton:active {
-    background-color: rgb(88, 4, 111);
-  }
-  
-  

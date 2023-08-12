@@ -7,7 +7,7 @@
 }
 
 nav {
-  background-color: rgb(239, 190, 231);
+  background-color: rgb(245, 217, 248);
   object-fit: cover;
   width: 100%;
   z-index: 1;
@@ -23,13 +23,13 @@ nav {
 
 @media (max-width: 768px) {
   .navegador {
-    background-color: #7649e7;
+    background-color: rgba(118, 73, 231, 0.462745098);
     z-index: 2;
   }
   .navegador .fa-bars {
     margin: 10px;
     font-size: 35px;
-    color: #2e045f;
+    color: #3e0c31;
     order: -1;
     display: block;
   }
@@ -107,19 +107,15 @@ nav {
   align-items: baseline;
   /*overflow-y: scroll;*/
 }
-
 .productos-venta h4 {
   font-size: 20px;
 }
-
 .productos-venta p {
   color: rgb(80, 60, 164);
 }
-
 .productos-venta ul li {
   list-style: none;
 }
-
 .productos-venta button {
   background-color: rgb(247, 93, 175);
   color: #fff;
@@ -130,51 +126,10 @@ nav {
   width: 100%;
   object-fit: center;
 }
-
-.imagen-productos {
+.productos-venta img {
   width: 220px;
   height: 200px;
   object-fit: cover;
-}
-
-.tarjeta {
-  width: 250px;
-  border: 2px solid #eeb4ef;
-  margin: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  background-color: rgb(246, 231, 243);
-  padding: 10px;
-}
-
-.tarjeta__titulo {
-  font-size: 20px;
-  text-align: start;
-}
-
-.tarjeta__parrafo {
-  padding: 10px;
-  font-size: 15px;
-  text-align: start;
-}
-
-.tarjeta__logo {
-  width: 100%;
-}
-
-.tarjeta__boton {
-  text-decoration: none;
-  background-color: rgb(247, 93, 175);
-  color: #fff;
-  padding: 5px;
-  margin: 5px;
-  border: none;
-  border-radius: 5px;
-}
-
-.tarjeta__boton:active {
-  background-color: rgb(88, 4, 111);
 }
 
 .spa-whats {

@@ -1,5 +1,5 @@
 nav{
-    background-color: rgb(239, 190, 231);
+    background-color: $bg-color;
     object-fit: cover;
     width: 100%;
     z-index: 1;
@@ -13,13 +13,13 @@ nav{
 }
 @media(max-width:768px){
     .navegador{
-        background-color: #7649e7;
+        background-color: #7649e776;
         z-index: 2;
     }
     .navegador .fa-bars{
         margin: 10px;
         font-size: 35px;
-        color: #2e045f;
+        color: #3e0c31;
         order: -1;
         display: block;
     }
@@ -41,7 +41,9 @@ nav{
     .navegador ul:hover{
         left: 0;
     }
+
 }
+
 .navegador {
     position: sticky;
     /*position: fixed;*/
@@ -65,5 +67,6 @@ nav{
         object-fit: cover;
         border-radius: 50px;
         margin: 5px;
+
     }
 }
