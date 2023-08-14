@@ -1,0 +1,12 @@
+.politica{
+    width: 100%;
+    justify-content: center;
+    text-align: left;
+    text-decoration: none;
+    flex-direction: row;
+}
+@each $valor in blue, yellow, black, red{
+   .#{$valor}{
+    color: $valor
+   } 
+}

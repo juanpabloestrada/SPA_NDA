@@ -6,8 +6,19 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body {
+  background-color: white;
+  color: rgb(79, 20, 138);
+}
+
+img {
+  width: 220px;
+  height: 200px;
+  object-fit: cover;
+}
+
 nav {
-  background-color: rgb(245, 217, 248);
+  background-color: rgb(244, 148, 225);
   object-fit: cover;
   width: 100%;
   z-index: 1;
@@ -23,13 +34,13 @@ nav {
 
 @media (max-width: 768px) {
   .navegador {
-    background-color: rgba(118, 73, 231, 0.462745098);
+    background-color: #c749e7;
     z-index: 2;
   }
   .navegador .fa-bars {
     margin: 10px;
     font-size: 35px;
-    color: #3e0c31;
+    color: #460d43;
     order: -1;
     display: block;
   }
@@ -65,7 +76,7 @@ nav {
   align-items: center;
 }
 .navegador ul li a {
-  color: rgb(117, 4, 158);
+  color: rgb(158, 4, 150);
   text-decoration: none;
   padding: 10px;
   text-decoration: solid;
@@ -117,19 +128,14 @@ nav {
   list-style: none;
 }
 .productos-venta button {
-  background-color: rgb(247, 93, 175);
+  background-color: #e957dd;
   color: #fff;
   padding: 5px;
   margin: 5px;
   border: none;
   border-radius: 5px;
-  width: 100%;
+  width: 120px;
   object-fit: center;
-}
-.productos-venta img {
-  width: 220px;
-  height: 200px;
-  object-fit: cover;
 }
 
 .spa-whats {
@@ -139,7 +145,7 @@ nav {
   line-height: 55px;
   bottom: 30px;
   right: 30px;
-  background: rgb(194, 15, 194);
+  background: rgb(234, 62, 159);
   color: azure;
   border-radius: 50px;
   text-align: center;
@@ -245,6 +251,10 @@ nav {
 .img1 p {
   font-size: 20px;
   text-align: center;
+}
+
+.img1 {
+  grid-area: img1;
 }
 
 .img2 {
@@ -360,6 +370,36 @@ nav {
 
 body {
   background-image: url(../multimedia/img/fondo\ de\ pantalla.jpeg);
+}
+
+.politica {
+  width: 100%;
+  justify-content: center;
+  text-align: left;
+  text-decoration: none;
+  flex-direction: row;
+}
+
+.blue {
+  color: blue;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.black {
+  color: black;
+}
+
+.red {
+  color: red;
+}
+
+img {
+  width: 220px;
+  height: 200px;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=styles.css.map */

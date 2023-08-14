@@ -4,3 +4,12 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+body{
+    @if $dark == activo {
+        background-color: black;
+        color: white;
+    }@else{
+        background-color: white;
+        color: rgb(79, 20, 138);
+    }
+}

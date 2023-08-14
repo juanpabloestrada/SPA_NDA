@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@600&display=swap');
+@import "variables";
 @import "reset";
-$bg-color: rgb(245, 217, 248);
+@import "mixin";
 @import "navegador";
 @import "productos";
 @import "whatsapp";
@@ -10,3 +11,5 @@ $bg-color: rgb(245, 217, 248);
 @import "nosotros";
 @import "footer";
 @import "body";
+@import "politica";
+@import "extend";

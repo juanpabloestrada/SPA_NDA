@@ -13,13 +13,13 @@ nav{
 }
 @media(max-width:768px){
     .navegador{
-        background-color: #7649e776;
+        background-color: #c749e7;
         z-index: 2;
     }
     .navegador .fa-bars{
         margin: 10px;
         font-size: 35px;
-        color: #3e0c31;
+        color: #460d43;
         order: -1;
         display: block;
     }
@@ -55,7 +55,7 @@ nav{
             display: flex;
             align-items: center;
             li a{
-                color: rgb(117, 4, 158);
+                color: rgb(158, 4, 150);
                 text-decoration: none;
                 padding: 10px;
                 text-decoration: solid;
