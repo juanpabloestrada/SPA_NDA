@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>productos</title>
+    <title>Pagina productos</title>
     <link rel="shortcut icon" href="../multimedia/img/SPANDALOGO.jpg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -23,84 +23,140 @@
             </ul>
     </nav>
     <header>
-        <h1>Para tus velas</h1>
+        <h1>Nuestros productos</h1>
     </header>
+    <div class="container-title">Velas</div>
+        
     <main>
-        <section class="tarjetas">
-        <div>
-            <a href="https://wa.link/19niu2" class="spa-whats" target="_blank">
-                <i class="fa-brands fa-whatsapp"></i>
-            </a>
+        <div class="container-img">
+          <img src="../multimedia/img/vainilla.jpg" alt="imagen">
         </div>
-            <div class="productos-venta">
-                  <img class="imagen-productos" src="../multimedia/img/Velas vaso.jpg" alt="velas">
-                    <h4><strong>velas</strong></h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, inventore?</p>
-                    <button class="boton">comprar</button>
+        <div class="container-info-product">
+          <div class="container-price">
+            <span>$105.50</span>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div class="container-details-product">
+            <div class="form-group">
+              <label for="aromas">Aroma</label>
+              <select name="aromas" id="aromas">
+                <option disabled selected value="">Escoge una opcion</option>
+                <option value="vainilla">Vainilla</option>
+                <option value="lavanda">Lavanda</option>
+                <option value="canela">Canela</option>
+              </select>
             </div>
-            <div class="productos-venta">
-                <img class="imagen-productos" src="../multimedia/img/aromatizantes.jpg" alt="aromatizantes">
-                <h4>Aromatizantes</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, ratione.</p>
-                <button class="boton">comprar</button>
+            <div class="form-group">
+              <label for="Ceras">Ceras</label>
+              <select name="Ceras" id="Ceras">
+                <option disabled selected value="">Escoge una opcion</option>
+                <option value="soja">Soja</option>
+                <option value="natural">Natural</option>
+                <option value="parafina">Parafina</option>
+              </select>
             </div>
-            <div class="productos-venta">
-                <img class="imagen-productos" src="../multimedia/img/Kit para velas.jpg" alt="kit para velas">
-                <h4>kit para velas</h4>
-                <ul>
-                    <li>Mechas:</li>
-                        <select name="cantidad">
-                            <option value="8">8 pavilos</option>
-                            <option value="16">16 pavilos</option>
-                            <option value="32">32 pavilos</option>
-                    </select>
-                    <li>cera de soya:</li>
-                        <select name="cera">
-                            <option value="1">1 kilogramo</option>
-                            <option value="2.5">2.5 kilogramos</option>
-                            <option value="5"selected>5 kilogramos</option>
-                        </select>
-                    <li>aromatizante:</li>
-                        <select name="aromatizantes">
-                            <option value="vainilla"selected>vainilla</option>
-                            <option value="lavanda">lavanda</option>
-                            <option value="menta">menta</option>
-                        </select>
-                    <li>recipientes para velas:</li>
-                        <select name="recipientes">
-                            <option value="4">4 recipientes</option>
-                            <option value="8" selected>8 recipientes</option>
-                            <option value="16">16 recipientes</option>
-                        </select>
-                    <li>molde:</li>
-                        <select name="moldes">
-                            <option value="1">1 molde</option>
-                            <option value="2"selected>2 moledes</option>
-                        </select>
-                    <li>instructivo</li>
-                </ul>
-                <button class="boton">comprar</button>
+            <button class="btn-clean">borrar</button>
+          </div>
+          <div class="container-add-cart">
+            <div class="container-quantuty">
+              <input type="number" placeholder="1" value="1" min="1" class="input-quantity">
+              <div class="btn-increment-decrement">
+                <i class="fa-solid fa-chevron-up"></i>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
             </div>
-            <div class="productos-venta">
-                <img class="imagen-productos" src="../multimedia/img/mechas.jpg" alt="mechas">
-                <h4>Mechas</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, molestias.</p>
-                <button class="boton">comprar</button>
+            <button class="btn-add-to-car">
+              <i class="fa-solid fa-plus">anadir al carrito</i>
+            </button>
+          </div>
+          <div class="container-descroption">
+            <div class="title-description">
+              <h4>Descripcion</h4>
+              <i class="fa-solid fa-chevron-down"></i>
             </div>
-            <div class="productos-venta">
-                <img class="imagen-productos" src="../multimedia/img/moldes.jpg" alt="moldes">
-                <h4>moldes</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, deserunt?</p>
-                <button class="boton">comprar</button>
+            <div class="text-description">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, veniam ratione ad a tempora eaque, deserunt illo repellendus, corporis nobis repudiandae maxime harum iste autem incidunt sapiente et. Officiis quidem atque perferendis iste voluptatibus corrupti sit. Itaque obcaecati corporis sed error natus, vel quasi cupiditate eos deleniti harum nisi vero minus reiciendis neque nobis! Eos ipsa quis mollitia, autem velit voluptate nihil voluptas ratione ut nisi repellendus officiis illum commodi?</p>
             </div>
-            <div class="productos-venta">
-                <img class="imagen-productos" src="../multimedia/img/velas personalizadas.jpg" alt="velas de soja">
-                <h4>velas de soja</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, nesciunt.</p>
-                <button class="boton">comprar</button>
+          </div>
+          <div class="container-additional-information">
+            <div class="title-aditional-information">
+              <h4>informacion adicional</h4>
+              <i class="fa-solid fa-chevron-down"></i>
             </div>
-        </section>
+            <div class="text-additional-information">
+              <p>---------</p>
+            </div>
+          </div>
+          <div class="container-reviews">
+            <div class="title-reviews">
+              <h4>Resenas</h4>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="text-reviews">
+              <p>---------</p>
+            </div>
+          </div>
+          <div class="container-social">
+            <span>Compartir</span>
+            <div class="containers-buttons-social">
+              <a href="#"><i class="fa-regular fa-envelope"></i></a><a href="#"><i class="fa-brands fa-facebook"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-youtube"></i></a><a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
     </main>
+    <section class="container-related-products">
+      <h2>productos relacionados</h2>
+      <div class="card-list-products">
+        <div class="card">
+          <div class="card-img">
+            <img src="../multimedia/img/kits iniciales.jpg" alt="producto-1">
+          </div>
+          <div class="info-card">
+            <div class="text-product">
+              <h3>kit de inicio</h3>
+              <p class="category">paquete de inicio</p>
+            </div>
+            <div class="price">$150.00</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="../multimedia/img/antiestres.jpg" alt="producto-2">
+          </div>
+          <div class="info-card">
+            <div class="text-product">
+              <h3>Velas antiestres</h3>
+              <p class="category">Paquete de velas relajantes</p>
+            </div>
+            <div class="price">$120.00</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="../multimedia/img/primavera.jpg" alt="producto-3">
+          </div>
+          <div class="info-card">
+            <div class="text-product">
+              <h3>Fragancias de primavera</h3>
+              <p class="category">Inspiradas en olores primaverales</p>
+            </div>
+            <div class="price">$175.00</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="../multimedia/img/nuevos aromas.jpg" alt="producto-4">
+          </div>
+          <div class="info-card">
+            <div class="text-product">
+              <h3>Nuevos aromas</h3>
+              <p class="category">Disfruta de los mejores aromas para cada temporada</p>
+            </div>
+            <div class="price">$150.00</div>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer class="footer">
         <div class="container">
            <div class="footer-row">
