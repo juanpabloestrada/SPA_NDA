@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contacto</title>
+    <title>contact form</title>
     <link rel="shortcut icon" href="../multimedia/img/SPANDALOGO.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/styles.css">
@@ -31,60 +32,95 @@
                 <i class="fa-brands fa-whatsapp"></i>
             </a>
         </div>
-            <form class="formulario row gap-1">
-                <h2>Ingresa tus datos</h2>
-                    <div>
-                        <label class="col-2" for="nombre">Nombre</label>
-                        <input class="col-12" type="text" name="nombre" id="nombre" placeholder="ingresa tu nombre" required>
-                    </div>
-                    <div>
-                        <label class="col-12" for="apellido">Apellido</label>
-                        <input class="col-12" type="text" name="apellido" id="apellido" placeholder="ingresa tu apellido" required>
-                    </div>
-                    <div>
-                        <label class="col-12" for="correo">Correo</label>
-                        <input class="col-12" type="email" name="correo" id="correo" placeholder="ingresa tu correo" required>
-                    </div>
-                    <div>
-                        <label class="col-12" for="telefono">Telefono</label>
-                        <input class="col-12" type="number" name="telefono" id="telefono" placeholder="ingresa tu telefono" required >
-                    </div>
-                    <div>
-                        <label class="col-2" for="mujer">mujer</label>
-                        <input type="radio" name="genero" id="mujer" value="mujer" checked>
-                    </div>
-                    <div>
-                    <label class="col-2" for="hombre">hombre</label>
-                        <input type="radio" name="genero" id="hombre" value="hombre">
-                    </div>
-                    <div>
-                        <label class="mensaje col-12"></label>
-                        <textarea class="mensaje-contacto col-12" name="mensaje" id="mensaje" placeholder="ingresa tu mensaje" cols="30" rows="10"></textarea>
-                    </div>
-                    <div>
-                        <a class="politica-privacidad" href="politica.html" target="_blank">politica de privacidad</a>
-                        <input type="checkbox" name="politica de privacidad" id="politica" required>
-                        <button class="boton" type="submit">Enviar</button>
-                        <button class="boton" type="reset">Eliminar</button>
-                    </div>
-            </form>
+        <div class="content">
+            <h1 class="logo">SPA <span>contactarnos</span></h1>
+            <div class="contact-wrapper">
+                <div class="contact-form">
+                    <h3>contactanos</h3>
+                    <form action="">
+                        <p>
+                            <label for="fullname">Nombre</label>
+                            <input type="text" name="" id="" required>
+                        </p>
+                        <p>
+                            <label>Email</label>
+                            <input type="text" name="" id="" required>
+                        </p>
+                        <p>
+                            <label for="telefono">Telefono</label>
+                            <input type="number" name="" id="" required>
+                        </p>
+                        <p>
+                            <label for="motivo">Motivo</label>
+                            <input type="text" name="" id="" required>
+                        </p>
+                        <p class="block">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea name="mensaje" id="mensaje" rows="5" required></textarea>
+                        </p>
+                        <p class="block">
+                            <button type="submit">enviar</button>
+                        </p>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h4>Mas informacion</h4>
+                    <ul>
+                        <li><i class="fas fa-location-dot">Andorra 24</i></li>
+                        <li><i class="fas fa-phone">5555555555</i></li>
+                        <li><i class="fas fa-envelope-open-text">contacto@spanda.com.mx</i></li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit eveniet aut expedita debitis ipsum explicabo, minima similique ab neque dolore.</p>
+                    <p>Spanda.com</p>
+                </div>
+            </div>
+        </div>
         <div class="row gap-2">
             <iframe class="mapa col-12 col-md-12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.4110928242703!2d-99.17628162491535!3d19.394636081876627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff718580b239%3A0x151b68053274e435!2sWTC!5e0!3m2!1ses-419!2smx!4v1688351546742!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </main>
-    <footer class="pie-de-pagina">
-        <div class="info-contacto">
-            <p>SPA'nda S.A. de C.V.</p>
-            <p>Direccion: Andorra 24</p>
-            <p>Telefono: 55555555</p>
-            <p>Whatsapp: 55555555</p>
+    <footer class="footer">
+        <div class="container">
+           <div class="footer-row">
+             <div class="footer-links">
+               <h4>Compania</h4>
+               <ul>
+                 <li><a href="#">Nosotros</a></li>
+                 <li><a href="#">Nuestros servicios</a></li>
+                 <li><a href="#">Politica de privacidad</a></li>
+                 <li><a href="#">Afiliate</a></li>
+               </ul>
+             </div>
+             <div class="footer-links">
+               <h4>Ayuda</h4>
+               <ul>
+                 <li><a href="#">Preguntas</a></li>
+                 <li><a href="#">Compras</a></li>
+                 <li><a href="#">Envios</a></li>
+                 <li><a href="#">Estatus de orden</a></li>
+                 <li><a href="#">pago</a></li>
+               </ul>
+             </div>
+             <div class="footer-links">
+               <h4>Tienda</h4>
+               <ul>
+                 <li><a href="#">Velas</a></li>
+                 <li><a href="#">Moldes</a></li>
+                 <li><a href="#">Cera</a></li>
+                 <li><a href="#">Mechas</a></li>
+               </ul>
+             </div>
+             <div class="footer-links">
+               <h4>Siguenos</h4>
+               <div class="social-link">
+                 <a href="https://www.facebook.com/groups/696772700524705" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                 <a href="https://www.instagram.com/jabones_artesanal_mx/" target="_blank"><i class="fab fa-instagram"></i></a>
+                 <a href="https://www.youtube.com/@danzaterapiaintegrativa5656" target="_blank"><i class="fab fa-youtube"></i></a>
+               </div>
+             </div>
+           </div>
         </div>
-        <div id="nuestras-redes">
-            <a href="https://www.facebook.com/groups/696772700524705" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.instagram.com/jabones_artesanal_mx/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.youtube.com/@danzaterapiaintegrativa5656" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-        </div>
-    </footer>
+ </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>

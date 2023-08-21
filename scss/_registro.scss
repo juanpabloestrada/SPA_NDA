@@ -1,46 +1,87 @@
-.formulario{
-    width: 478px;
-    border: 2px solid rgb(62, 3, 86);
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    margin: 10px auto;
-    border-radius: 10px;
+.content{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
 }
-.formulario input{
-    padding: 8px;
-    border-radius: 15px;
+.logo{
+    text-align: center;
+    font-size: 3em;
+    span{
+        color: rgb(241, 53, 251);
+    }
 }
-.formulario input:focus{
-    border: 3px solid #b2089c;
-    outline: none;
+.contact-wraper{
+    box-shadow: 0 0 20px 0 rgba(253, 8, 8, 0.3);
 }
-.formulario .mensaje-contacto:focus{
-    border: 3px solid #b2089c;
-    outline: none;
+.contact-wraper > * {
+    padding: 1em;
 }
-.registro{
-    width: 100px;
-    height: 700px;
-    padding: 10px;
-    border: 2px solid black;
-    border-radius: 5px;
-    flex-direction: column;
-    margin: 15px;
+.contact-form{
+    background: rgb(255, 197, 245);
+    form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .block{
+            grid-column: 1 / 3;
+        }
+    }
+    form p{
+        margin: 0;
+        padding: 1em;
+    }
 }
-.formulario button{
-    width: 80px;
-    height: 30px;
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea{
+    width: 100%;
+    padding: .7em;
+    border: none;
+    color: blueviolet;
+    border-bottom: 1px solid purple;
+}
+.contact-form form button{
+    background: rgb(178, 71, 173);
     color: white;
-    background-color: #e458d9;
-    margin: 5px;
-    border-color: rgb(79, 13, 77);
-    border-radius: 5px;
+    text-transform: uppercase;
+    padding: 1em;
+    &:hover{
+        background: rgb(115, 56, 198);
+        color: rgb(255, 0, 136);
+        transition: background-color .5s ease-out;
+    }
 }
-.politica-privacidad:visited{
-    color: rgb(95, 26, 185);
+.contact-info{
+    background: rgb(228, 124, 228);
+    ul{
+        list-style: none;
+        padding: 0;
+        li{
+            padding: .3em;
+        }
+    }
 }
-.boton:active{
-    background-color: rgb(88, 4, 111);
+.contact-info h4,
+.contact-info ul,
+.contact-info p{
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+@media(min-width: 700px){
+    body{
+        padding: 0 4rem;
+    }
+    .contact-wrapper{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact-wrapper > * {
+        padding: 2em;
+    }
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p{
+        padding: 1em;
+        text-align: left;
+    }
 }

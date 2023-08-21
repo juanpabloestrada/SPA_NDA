@@ -1,16 +1,64 @@
-.pie-de-pagina{
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    justify-content: center;
-    color: rgb(31, 2, 42);
-    padding: 20px;
-    background-color: #f79cef;
-    align-items: center;
-    text-align: center;
-    nuestras-redes{
-        font-size: 450px;
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer{
+    background-color: rgb(255, 165, 225);
+    padding: 80px 0;
+}
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-links{
+    width: 25%;
+    padding: 0 15px;
+    h4{
+        font-size: 20px;
+        margin-bottom: 25px;
+        font-weight: 500;
+        border-bottom: 2px solid;
+        padding-bottom: 10px;
+        display: inline-block;
     }
-    info-contacto{
-        font-size: 15px;
+    ul li{
+        list-style: none;
+    }
+    ul li a{
+        font-size: 18px;
+        text-decoration: none;
+        color: #640954;
+        display: block;
+        margin-bottom: 15px;
+        transition: all .3s ease;
+        &:hover{
+            color: rgb(252, 252, 252);
+            padding-left: 6px;
+        }
+    }
+}
+.social-link a{
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgb(219, 158, 234);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: rgb(161, 0, 137);
+    transition: all .5s ease;
+    &:hover{
+        background-color: azure;
+    }
+}
+
+@media(max-width:991px){
+    .footer-row{
+        text-align: center;
+    }
+    .footer-links{
+        width: 100%;
+        margin-bottom: 30px;
     }
 }
