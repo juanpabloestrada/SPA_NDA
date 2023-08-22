@@ -89,63 +89,6 @@ nav {
   margin: 5px;
 }
 
-/*fin spa whats*/
-/*...fin main...*/
-/* productos*/
-.tarjetas {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-.tarjetas img {
-  transition: 0.5s;
-}
-.tarjetas img:hover {
-  transform: scale(1.05);
-  /*transform: translate(5px,5px);*/
-}
-
-.productos-venta {
-  width: 250px;
-  border: 2px solid blueviolet;
-  padding: 10px;
-  margin: 20px;
-  border-radius: 5px;
-  color: blueviolet;
-  border: solid #eeb4ef;
-  font-size: 15px;
-  font-weight: bold;
-  background-image: linear-gradient(45deg, rgb(197, 232, 248), rgb(206, 125, 215), rgb(239, 78, 212));
-  /*radial-gradient*/
-  object-fit: cover;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: baseline;
-  /*overflow-y: scroll;*/
-}
-.productos-venta h4 {
-  font-size: 20px;
-}
-.productos-venta p {
-  color: rgb(80, 60, 164);
-}
-.productos-venta ul li {
-  list-style: none;
-}
-.productos-venta button {
-  background-color: #e957dd;
-  color: #fff;
-  padding: 5px;
-  margin: 5px;
-  border: none;
-  border-radius: 5px;
-  width: 120px;
-  object-fit: center;
-}
-
 .spa-whats {
   position: fixed;
   height: 55px;
@@ -362,28 +305,227 @@ nav {
   color: #b2089c;
 }
 
-.pagina-principal {
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.container-hero {
+  background-color: rgb(233, 122, 225);
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+.hero i {
+  font-size: 3rem;
+}
+
+.customer-support {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.content-customer-support {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+}
+
+.container-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.container-logo i {
+  font-size: 3rem;
+}
+.container-logo h1 a {
+  text-decoration: none;
+  color: rgb(131, 6, 153);
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+.container-user {
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+}
+.container-user .fa-user {
+  font-size: 3rem;
+  color: rgb(77, 3, 113);
+  padding-right: 2.5rem;
+  border-right: 1px solid black;
+}
+.container-user .fa-basket-shopping {
+  font-size: 3rem;
+  color: rgb(77, 3, 113);
+  padding-left: 1rem;
+}
+
+.content-shopping-cart {
+  display: flex;
+  flex-direction: column;
+}
+
+/*nb*/
+.container-navbar {
+  background-color: rgb(221, 88, 224);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+.navbar .fa-bars {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  gap: 2rem;
+}
+.menu li {
+  list-style: none;
+}
+.menu a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: black;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+}
+.menu a::after {
+  content: "";
+  width: 1.5rem;
+  height: 1px;
+  background-color: aliceblue;
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.menu a:hover::after {
+  opacity: 1;
+}
+.menu a:hover {
+  color: aliceblue;
+}
+
+.search-form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 4.4rem;
+}
+.search-form input {
+  outline: none;
+  font-family: inherit;
+  border: none;
+  border-radius: 2rem;
+  width: 25rem;
+  font-size: 1.4rem;
+  padding: 0 2rem;
+  color: rgb(193, 10, 190);
+  cursor: pointer;
+}
+.search-form input::-webkit-search-cancel-button {
+  appearance: none;
+}
+.search-form .btn-search {
+  border: none;
+  font-size: 20px;
+  color: aliceblue;
+  border-radius: 100%;
+  background-color: rgb(218, 122, 233);
+  display: flex;
+  align-items: center;
+  height: 2.75rem;
+  width: 2.75rem;
+  padding: 1rem;
+}
+
+.banner {
+  background-image: linear-gradient(100deg, rgba(0, 0, 0, 0.742), rgba(186, 166, 166, 0.079)), url(../multimedia/img/primavera.jpg);
+  height: 60rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.content-banner {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 25rem 10rem;
+}
+.content-banner p {
+  color: blueviolet;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+.content-banner h2 {
+  color: rgb(195, 0, 255);
+  font-size: 3.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.content-banner a {
+  margin-top: 2rem;
+  text-decoration: none;
+  color: rgb(254, 250, 255);
+  background-color: rgb(209, 113, 194);
+  display: inline-block;
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  border-radius: 3rem;
+}
+
+.container-features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  padding: 3rem 0;
+}
+
+.card-feature {
+  display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1.5rem;
+  background-color: rgb(255, 198, 247);
+  border-radius: 1rem;
+  padding: 1.5rem 1;
+}
+.card-feature i {
+  font-size: 2rem;
+  color: blueviolet;
+  padding: 3px;
 }
 
-.musica {
-  width: 300px;
-  border-radius: 5px;
-  margin: 20px;
+.feature-content {
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  align-items: center;
+  gap: 0.5rem;
 }
-
-.carousel-item {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
+.feature-content span {
+  font-weight: 700;
+  font-size: 1rem;
+  color: rgb(200, 15, 224);
+}
+.feature-content p {
+  color: rgb(20, 23, 203);
+  font-weight: 700;
+  font-size: 10px;
 }
 
 .quienes-somos {
