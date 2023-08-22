@@ -33,7 +33,7 @@
     }
     h1 a{
         text-decoration: none;
-        color: rgb(131, 6, 153);
+        color: rgb(153, 6, 6);
         font-size: 3rem;
         text-transform: uppercase;
         letter-spacing: -1px;
@@ -182,12 +182,12 @@
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
-    background-color: rgb(255, 198, 247);
+    background-color: rgb(3, 118, 14);
     border-radius: 1rem;
     padding: 1.5rem 1;
     i{
         font-size: 2.0rem;
-        color: blueviolet;
+        color: rgb(226, 43, 43);
         padding: 3px;
     }
 }
@@ -198,11 +198,22 @@
     span{
         font-weight: 700;
         font-size: 1.0rem;
-        color: rgb(200, 15, 224);
+        color: rgb(224, 15, 18);
     }
     p{
-        color: rgb(20, 23, 203);
-        font-weight: 700;
+        color: rgb(93, 170, 29);
+        font-weight: 500;
         font-size: 10px;
+    }
+}
+.top-categories{
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    margin-bottom: 10rem;
+    .container-categories{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
     }
 }
