@@ -12,7 +12,7 @@ nav{
 }
 @media(max-width:768px){
     .navegador{
-        background-color: #8f0bb4;
+        background-color: #0bb41f;
     }
     .navegador .fa-bars{
         margin: 10px;
@@ -65,7 +65,7 @@ nav{
     position: relative;
     display: flex;
     align-items: center;
-    height: 4.4rem;
+    height: 4.0rem;
     z-index: -1;
     input{
         outline: none;
@@ -75,7 +75,7 @@ nav{
         width: 25rem;
         font-size: 1.4rem;
         padding: 0 2rem;
-        color: rgb(193, 10, 190);
+        color: rgb(255, 0, 0);
         cursor: pointer;
         &::-webkit-search-cancel-button{
             appearance: none;
@@ -92,5 +92,9 @@ nav{
         height: 2.75rem;
         width: 2.75rem;
         padding: 1rem;
+        &:hover{
+            color: #ee33bf;
+            background-color: aqua;
+        }
     }
 }
