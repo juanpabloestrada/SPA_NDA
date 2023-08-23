@@ -149,7 +149,7 @@
 }
 .container-features{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 4fr);
     gap: 3rem;
     padding: 3rem 0;
 }
@@ -165,6 +165,12 @@
         font-size: 2.0rem;
         color: rgb(202, 43, 226);
         padding: 3px;
+    }
+}
+@media(max-width:991px){
+    .card-feature{
+        display: none;
+        
     }
 }
 .feature-content{
@@ -272,6 +278,13 @@
             background-color: rgb(238, 0, 255);
             color: rgb(255, 165, 232);
         }
+    }
+}
+@media(max-width:991px){
+    .container-options{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
 }
 .container-products{

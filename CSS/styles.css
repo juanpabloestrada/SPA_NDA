@@ -495,7 +495,7 @@ nav {
 
 .container-features {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 4fr);
   gap: 3rem;
   padding: 3rem 0;
 }
@@ -515,6 +515,11 @@ nav {
   padding: 3px;
 }
 
+@media (max-width: 991px) {
+  .card-feature {
+    display: none;
+  }
+}
 .feature-content {
   display: flex;
   flex-direction: column;
@@ -630,6 +635,13 @@ nav {
   color: rgb(255, 165, 232);
 }
 
+@media (max-width: 991px) {
+  .container-options {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
 .container-products {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
