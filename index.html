@@ -13,7 +13,6 @@
 </head>
 <body>
       <nav class="navegador">
-            <img class="spanda-header" src="./multimedia/img/SPANDALOGO.jpg" alt="SPA'anda">
             <i class="fa-solid fa-bars"></i>
                 <ul>
                     <li><a href="./index.html">inicio</a></li>
@@ -22,18 +21,19 @@
                     <li><a href="./pages/talleres.html">talleres</a></li>
                     <li><a href="./pages/contacto.html">contacto</a></li>
                     <li><a href="#nuestras-redes">nuestras redes</a></li>
-                </ul>  
+                </ul>
+                <form class="search-form">
+                  <input type="search" placeholder="Buscar...">
+                  <button class="btn-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </form>
         </nav>
         <header>
           <div class="container-hero">
             <div class="container hero">
-              <i class="fa-solid fa-headset"></i>
-              <div class="content-customer-support">
-                <span class="text">Soporte al cliente</span>
-                <span class="number">123-456-7890</span>
-              </div>
               <div class="container-logo">
-                <i class="fa-solid fa-hanukiah"></i>
+                <img class="spanda-header" src="./multimedia/img/SPANDALOGO.jpg" alt="SPA'anda">
                 <h1 class="logo"><a href="/">SPA'nda</a></h1>
               </div>
               <div class="container-user">
@@ -45,25 +45,6 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="container-navbar">
-              <nav class="navbar container">
-                <i class="fa-solid fa-bars"></i>
-                <ul class="menu">
-                  <li><a href="#">inicio</a></li>
-                  <li><a href="#">Velas</a></li>
-                  <li><a href="#">Aceites</a></li>
-                  <li><a href="#">Ceras</a></li>
-                  <li><a href="#">Moldes</a></li>
-                  <li><a href="#">Mas</a></li>
-                </ul>
-                <form class="search-form">
-                  <input type="search" placeholder="Buscar...">
-                  <button class="btn-search">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                  </button>
-                </form>
-              </nav>
           </div>
         </header>
         <section class="banner">
@@ -118,7 +99,7 @@
                   <p>Aceites</p>
                   <span>Ver mas</span>
                 </div>
-                <div class="card-category category-Ceras">
+                <div class="card-category category-ceras">
                   <p>Ceras</p>
                   <span>Ver mas</span>
                 </div>
@@ -132,6 +113,37 @@
                 <span>Mas vendidos</span>
               </div>
               <div class="container-products">
+                <div class="card-product">
+                  <div class="container-img">
+                    <img src="./multimedia/img/velas anti estres.jpg" alt="">
+                    <span class="discount">-25%</span>
+                    <div class="button-group">
+                      <span>
+                        <i class="fa-regular fa-eye"></i>
+                      </span>
+                      <span>
+                        <i class="fa-regular fa-heart"></i>
+                      </span>
+                      <span>
+                        <i class="fa-solid fa-code-compare"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="content-card-product">
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3>Coleccion primavera</h3>
+                    <span class="add-cart">
+                      <i class="fa-solid fa-basket-shopping"></i>
+                    </span>
+                    <p class="price">$180.00 <span>$225.00</span></p>
+                  </div>
+                </div>
                 <div class="card-product">
                   <div class="container-img">
                     <img src="./multimedia/img/naturaleza.jpg" alt="">
@@ -156,11 +168,42 @@
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-regular fa-star"></i>
                     </div>
-                    <h3>Velas primavera</h3>
+                    <h3>Fragancia vainilla</h3>
                     <span class="add-cart">
                       <i class="fa-solid fa-basket-shopping"></i>
                     </span>
-                    <p class="price">$80.50 <span>$95.00</span></p>
+                    <p class="price">$200.00 <span>$226.00</span></p>
+                  </div>
+                </div>
+                <div class="card-product">
+                  <div class="container-img">
+                    <img src="./multimedia/img/otono.jpg" alt="">
+                    <span class="discount">-12%</span>
+                    <div class="button-group">
+                      <span>
+                        <i class="fa-regular fa-eye"></i>
+                      </span>
+                      <span>
+                        <i class="fa-regular fa-heart"></i>
+                      </span>
+                      <span>
+                        <i class="fa-solid fa-code-compare"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="content-card-product">
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3>Coleccion otoño</h3>
+                    <span class="add-cart">
+                      <i class="fa-solid fa-basket-shopping"></i>
+                    </span>
+                    <p class="price">$80.50 <span>$89.60</span></p>
                   </div>
                 </div>
               </div>

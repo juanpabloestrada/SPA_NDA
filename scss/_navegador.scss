@@ -2,7 +2,6 @@ nav{
     background-color: $bg-color;
     object-fit: cover;
     width: 100%;
-    z-index: 1;
     /*fijar navegador
     position: fixed;
     width: 100%;
@@ -13,13 +12,12 @@ nav{
 }
 @media(max-width:768px){
     .navegador{
-        background-color: #c749e7;
-        z-index: 2;
+        background-color: #8f0bb4;
     }
     .navegador .fa-bars{
         margin: 10px;
         font-size: 35px;
-        color: #460d43;
+        color: #ee33bf;
         order: -1;
         display: block;
     }
@@ -43,30 +41,56 @@ nav{
     }
 
 }
-
 .navegador {
     position: sticky;
     /*position: fixed;*/
     top: 0%;
     display: flex;
     justify-content: space-between;
+    z-index: 1;
         ul{
             list-style: none;
             display: flex;
             align-items: center;
             li a{
-                color: rgb(158, 4, 150);
+                color: rgb(158, 4, 117);
+                font-size: 1.1rem;
                 text-decoration: none;
                 padding: 10px;
                 text-decoration: solid;
             }
         }
-    img{
-        width: 60px;
-        height: 60px;
-        object-fit: cover;
-        border-radius: 50px;
-        margin: 5px;
-
+}
+.search-form{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 4.4rem;
+    z-index: -1;
+    input{
+        outline: none;
+        font-family: inherit;
+        border: none;
+        border-radius: 2rem;
+        width: 25rem;
+        font-size: 1.4rem;
+        padding: 0 2rem;
+        color: rgb(193, 10, 190);
+        cursor: pointer;
+        &::-webkit-search-cancel-button{
+            appearance: none;
+        }
+    }
+    .btn-search{
+        border: none;
+        font-size: 20px;
+        color: aliceblue;
+        border-radius: 100%;
+        background-color: rgb(198, 75, 217);
+        display: flex;
+        align-items: center;
+        height: 2.75rem;
+        width: 2.75rem;
+        padding: 1rem;
     }
 }

@@ -21,7 +21,6 @@ nav {
   background-color: rgb(244, 148, 225);
   object-fit: cover;
   width: 100%;
-  z-index: 1;
   /*fijar navegador
   position: fixed;
   width: 100%;
@@ -34,13 +33,12 @@ nav {
 
 @media (max-width: 768px) {
   .navegador {
-    background-color: #c749e7;
-    z-index: 2;
+    background-color: #8f0bb4;
   }
   .navegador .fa-bars {
     margin: 10px;
     font-size: 35px;
-    color: #460d43;
+    color: #ee33bf;
     order: -1;
     display: block;
   }
@@ -69,6 +67,7 @@ nav {
   top: 0%;
   display: flex;
   justify-content: space-between;
+  z-index: 1;
 }
 .navegador ul {
   list-style: none;
@@ -76,17 +75,45 @@ nav {
   align-items: center;
 }
 .navegador ul li a {
-  color: rgb(158, 4, 150);
+  color: rgb(158, 4, 117);
+  font-size: 1.1rem;
   text-decoration: none;
   padding: 10px;
   text-decoration: solid;
 }
-.navegador img {
-  width: 60px;
-  height: 60px;
-  object-fit: cover;
-  border-radius: 50px;
-  margin: 5px;
+
+.search-form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 4.4rem;
+  z-index: -1;
+}
+.search-form input {
+  outline: none;
+  font-family: inherit;
+  border: none;
+  border-radius: 2rem;
+  width: 25rem;
+  font-size: 1.4rem;
+  padding: 0 2rem;
+  color: rgb(193, 10, 190);
+  cursor: pointer;
+}
+.search-form input::-webkit-search-cancel-button {
+  appearance: none;
+}
+.search-form .btn-search {
+  border: none;
+  font-size: 20px;
+  color: aliceblue;
+  border-radius: 100%;
+  background-color: rgb(198, 75, 217);
+  display: flex;
+  align-items: center;
+  height: 2.75rem;
+  width: 2.75rem;
+  padding: 1rem;
 }
 
 .spa-whats {
@@ -310,6 +337,12 @@ nav {
   margin: 0 auto;
 }
 
+.heading-1 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 3rem;
+}
+
 .container-hero {
   background-color: rgb(233, 122, 225);
 }
@@ -340,12 +373,14 @@ nav {
   align-items: center;
   gap: 0.5rem;
 }
-.container-logo i {
-  font-size: 3rem;
+.container-logo img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
 }
 .container-logo h1 a {
   text-decoration: none;
-  color: rgb(131, 6, 153);
+  color: rgb(228, 38, 162);
   font-size: 3rem;
   text-transform: uppercase;
   letter-spacing: -1px;
@@ -357,15 +392,16 @@ nav {
   cursor: pointer;
 }
 .container-user .fa-user {
-  font-size: 3rem;
-  color: rgb(77, 3, 113);
-  padding-right: 2.5rem;
-  border-right: 1px solid black;
+  font-size: 2rem;
+  color: rgb(171, 28, 223);
+  padding-right: 1.1rem;
+  padding-left: 2rem;
+  border-right: 1px solid rgb(247, 24, 136);
 }
 .container-user .fa-basket-shopping {
-  font-size: 3rem;
-  color: rgb(77, 3, 113);
-  padding-left: 1rem;
+  font-size: 2rem;
+  color: rgb(171, 28, 223);
+  padding-left: 0.1rem;
 }
 
 .content-shopping-cart {
@@ -398,7 +434,7 @@ nav {
 .menu a {
   text-decoration: none;
   font-size: 1.3rem;
-  color: black;
+  color: rgb(235, 35, 218);
   font-weight: 600;
   text-transform: uppercase;
   position: relative;
@@ -420,39 +456,6 @@ nav {
 }
 .menu a:hover {
   color: aliceblue;
-}
-
-.search-form {
-  position: relative;
-  display: flex;
-  align-items: center;
-  height: 4.4rem;
-}
-.search-form input {
-  outline: none;
-  font-family: inherit;
-  border: none;
-  border-radius: 2rem;
-  width: 25rem;
-  font-size: 1.4rem;
-  padding: 0 2rem;
-  color: rgb(193, 10, 190);
-  cursor: pointer;
-}
-.search-form input::-webkit-search-cancel-button {
-  appearance: none;
-}
-.search-form .btn-search {
-  border: none;
-  font-size: 20px;
-  color: aliceblue;
-  border-radius: 100%;
-  background-color: rgb(218, 122, 233);
-  display: flex;
-  align-items: center;
-  height: 2.75rem;
-  width: 2.75rem;
-  padding: 1rem;
 }
 
 .banner {
@@ -502,13 +505,13 @@ nav {
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
-  background-color: rgb(255, 198, 247);
+  background-color: rgb(249, 161, 236);
   border-radius: 1rem;
   padding: 1.5rem 1;
 }
 .card-feature i {
   font-size: 2rem;
-  color: blueviolet;
+  color: rgb(202, 43, 226);
   padding: 3px;
 }
 
@@ -520,12 +523,241 @@ nav {
 .feature-content span {
   font-weight: 700;
   font-size: 1rem;
-  color: rgb(200, 15, 224);
+  color: rgb(196, 15, 224);
 }
 .feature-content p {
-  color: rgb(20, 23, 203);
-  font-weight: 700;
+  color: rgb(240, 64, 196);
+  font-weight: 500;
   font-size: 10px;
+}
+
+.top-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 10rem;
+}
+.top-categories .container-categories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.card-category {
+  height: 13rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+  gap: 2rem;
+}
+.card-category p {
+  font-size: 2.5rem;
+  color: white;
+  text-transform: capitalize;
+  position: relative;
+}
+.card-category p::after {
+  content: "";
+  width: 2.5rem;
+  height: 2px;
+  background-color: aqua;
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+.card-category span {
+  font-size: 1.6rem;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.card-category span:hover {
+  color: blue;
+}
+
+.category-velas {
+  background-image: linear-gradient(rgba(171, 92, 92, 0.5333333333), rgba(245, 209, 209, 0.1098039216)), url(../multimedia/img/velas.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
+}
+
+.category-aceites {
+  background-image: linear-gradient(rgba(171, 92, 92, 0.5333333333), rgba(245, 209, 209, 0.1098039216)), url(../multimedia/img/verano.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
+}
+
+.category-ceras {
+  background-image: linear-gradient(rgba(171, 92, 92, 0.5333333333), rgba(245, 209, 209, 0.1098039216)), url(../multimedia/img/kits\ iniciales.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
+}
+
+.top-products {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  padding: 15px;
+}
+
+.container-options {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+.container-options span {
+  color: rgb(238, 0, 255);
+  background-color: rgb(255, 165, 232);
+  padding: 0.7rem 3rem;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.container-options span:hover {
+  background-color: rgb(238, 0, 255);
+  color: rgb(255, 165, 232);
+}
+.container-options span.active {
+  background-color: rgb(238, 0, 255);
+  color: rgb(255, 165, 232);
+}
+
+.container-products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 3rem;
+}
+
+.card-product {
+  background-color: rgb(253, 200, 248);
+  padding: 2rem 3rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0 0 2px rgb(255, 2, 242);
+}
+.card-product:hover .discount {
+  background-color: rgb(149, 0, 255);
+  color: white;
+}
+.card-product:hover .button-group {
+  z-index: 0;
+  right: -2.9rem;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: absolute;
+  top: 0;
+  right: -3rem;
+  z-index: -1;
+  transition: all 0.4s ease;
+}
+.button-group span {
+  border: 1px solid black;
+  padding: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.button-group span:hover {
+  background-color: rgb(183, 43, 226);
+  color: whitesmoke;
+}
+.button-group span i {
+  font-size: 0.9rem;
+  color: rgb(255, 255, 255);
+}
+
+.container-img {
+  position: relative;
+}
+.container-img img {
+  width: 100%;
+  z-index: 0;
+}
+.container-img .discount {
+  position: absolute;
+  left: 0;
+  background-color: aqua;
+  color: rgb(29, 1, 1);
+  padding: 2px 1.2rem;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+}
+
+.content-card-product {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, min-content);
+  row-gap: 1rem;
+}
+.content-card-product h3 {
+  grid-row: 2/3;
+  grid-column: 1/-1;
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.content-card-product h3:hover {
+  color: blue;
+}
+.content-card-product .price {
+  justify-self: end;
+  align-self: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.content-card-product .price span {
+  font-size: 1.2rem;
+  font-weight: 200;
+  text-decoration: line-through;
+  color: rgb(182, 124, 240);
+  margin-left: 0.5rem;
+}
+
+.stars {
+  grid-row: 1/2;
+  grid-column: 1/-1;
+}
+.stars i {
+  font-size: 1.3rem;
+  color: rgb(175, 2, 218);
+}
+
+.add-cart {
+  justify-self: start;
+  border: 2px solid rgb(232, 61, 212);
+  padding: 1.7rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(217, 0, 255);
+  color: aliceblue;
+}
+.add-cart:hover {
+  color: rgb(217, 0, 255);
+  background-color: aliceblue;
+}
+.add-cart i {
+  font-size: 1.5rem;
 }
 
 .quienes-somos {
