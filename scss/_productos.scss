@@ -97,7 +97,7 @@
    i{
     height: 35px;
     width: 35px;
-    background-color: aqua;
+    background-color: rgb(255, 0, 212);
     border-radius: 50%;
     font-size: 20px;
     color: pink;
@@ -187,14 +187,5 @@
     &:hover{
         background-color: rgb(244, 199, 236);
         color: rgb(174, 50, 228);
-    }
-}
-@media (max-width: 1000px){
-    header{
-        padding: 7px 4%;
-        transition: .2s;    }
-    section{
-        padding: 80x 4%;
-        transition: .1s;
     }
 }
