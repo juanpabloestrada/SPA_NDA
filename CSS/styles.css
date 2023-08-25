@@ -33,7 +33,7 @@ nav {
 
 @media (max-width: 768px) {
   .navegador {
-    background-color: #8f0bb4;
+    background-color: #b060ea;
   }
   .navegador .fa-bars {
     margin: 10px;
@@ -66,7 +66,6 @@ nav {
   /*position: fixed;*/
   top: 0%;
   display: flex;
-  justify-content: space-between;
   z-index: 1;
 }
 .navegador ul {
@@ -81,41 +80,228 @@ nav {
   padding: 10px;
   text-decoration: solid;
 }
-
-.search-form {
-  position: relative;
-  display: flex;
-  align-items: center;
-  height: 4.4rem;
-  z-index: -1;
+.navegador ul li a:hover {
+  color: blue;
+  transition: 0.5s ease;
 }
-.search-form input {
-  outline: none;
-  font-family: inherit;
-  border: none;
-  border-radius: 2rem;
-  width: 25rem;
-  font-size: 1.4rem;
-  padding: 0 2rem;
-  color: rgb(193, 10, 190);
+
+.section {
+  padding: 100px 14%;
+}
+
+.home {
+  min-height: 100vh;
+  width: 100%;
+  background: url(../multimedia/img/naturaleza.jpg);
+  background-size: cover;
+  background-position: center top;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  color: rgb(0, 0, 0);
+}
+
+.home-text h1 {
+  padding-left: 25px;
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: 0.6rem;
+  margin-bottom: 1.4rem;
+}
+.home-text span {
+  font-size: 2.7rem;
+  color: rgb(0, 0, 0);
+}
+
+.home-text p {
+  padding-left: 25px;
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+  letter-spacing: 2rem;
+  color: rgb(99, 28, 125);
+}
+
+.btn {
+  padding-left: 25px;
+  display: inline-block;
+  padding: 13px 25px;
+  background: rgb(142, 10, 186);
+  color: rgb(242, 203, 240);
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: all 0.35s ease;
+}
+.btn:hover {
+  background-color: rgb(198, 153, 196);
+  color: rgb(142, 10, 186);
+}
+
+.center-text {
+  padding-left: 25px;
+  text-align: center;
+}
+.center-text h2 {
+  font-size: 2.5rem;
+}
+
+.featured-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+  gap: 1.3rem;
+  align-items: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.row {
+  position: relative;
+  transition: all 0.35 ease;
+}
+.row img {
+  width: 100%;
+}
+
+.fea-text {
+  position: absolute;
+  top: 40px;
+  left: 50px;
+}
+.fea-text h5 {
+  font-size: 19px;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  color: rgb(255, 0, 221);
+}
+.fea-text p {
+  color: aqua;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+.row .arrow {
+  position: absolute;
+  bottom: 40px;
+  left: 50px;
+}
+.row .arrow i {
+  height: 35px;
+  width: 35px;
+  background-color: aqua;
+  border-radius: 50%;
+  font-size: 20px;
+  color: pink;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.35s ease;
+}
+
+.row:hover {
+  transform: scale(0.9) translateY(-4px);
   cursor: pointer;
 }
-.search-form input::-webkit-search-cancel-button {
-  appearance: none;
-}
-.search-form .btn-search {
-  border: none;
-  font-size: 20px;
-  color: aliceblue;
-  border-radius: 100%;
-  background-color: rgb(198, 75, 217);
-  display: flex;
-  align-items: center;
-  height: 2.75rem;
-  width: 2.75rem;
-  padding: 1rem;
+.row:hover i {
+  background-color: crimson;
+  color: chartreuse;
 }
 
+.cta {
+  height: 60vh;
+  width: 100%;
+  background: url(../multimedia/img/vainilla.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding-top: 2vh;
+}
+
+.cta-text h6 {
+  padding-left: 25px;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  margin-bottom: 14px;
+}
+
+.cta-text h4 {
+  padding-left: 25px;
+  font-size: 3.3rem;
+  line-height: 1.2;
+  letter-spacing: 0.6rem;
+  margin-bottom: 30px;
+}
+
+.new-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+  gap: 1.3rem;
+  align-items: center;
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.box {
+  position: relative;
+  transition: all 0.4s ease;
+}
+.box:hover {
+  transform: scale(0.9) translate(-5px);
+  cursor: pointer;
+}
+.box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.box h5 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.box h6 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.box h4 {
+  font-size: 12px;
+}
+
+.sale {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 30px;
+  background-color: rgb(174, 50, 228);
+  color: rgb(244, 199, 236);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.sale:hover {
+  background-color: rgb(244, 199, 236);
+  color: rgb(174, 50, 228);
+}
+
+@media (max-width: 1000px) {
+  header {
+    padding: 7px 4%;
+    transition: 0.2s;
+  }
+  section {
+    padding: 80x 4%;
+    transition: 0.1s;
+  }
+}
 .spa-whats {
   position: fixed;
   height: 55px;
@@ -357,17 +543,6 @@ nav {
   font-size: 3rem;
 }
 
-.customer-support {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-
-.content-customer-support {
-  display: flex;
-  flex-direction: column;
-}
-
 .container-logo {
   display: flex;
   align-items: center;
@@ -380,7 +555,7 @@ nav {
 }
 .container-logo h1 a {
   text-decoration: none;
-  color: rgb(228, 38, 162);
+  color: rgb(155, 38, 228);
   font-size: 3rem;
   text-transform: uppercase;
   letter-spacing: -1px;
@@ -398,10 +573,18 @@ nav {
   padding-left: 2rem;
   border-right: 1px solid rgb(247, 24, 136);
 }
+.container-user .fa-user:hover {
+  color: rgb(38, 31, 241);
+  transition: 0.5s ease;
+}
 .container-user .fa-basket-shopping {
   font-size: 2rem;
   color: rgb(171, 28, 223);
   padding-left: 0.1rem;
+}
+.container-user .fa-basket-shopping:hover {
+  color: rgb(38, 31, 241);
+  transition: 0.5s ease;
 }
 
 .content-shopping-cart {
@@ -471,7 +654,7 @@ nav {
   padding: 25rem 10rem;
 }
 .content-banner p {
-  color: blueviolet;
+  color: rgb(191, 152, 227);
   font-size: 1.2rem;
   margin-bottom: 1rem;
   font-weight: 500;
@@ -856,7 +1039,7 @@ nav {
   }
 }
 body {
-  background-image: url(../multimedia/img/fondo\ de\ pantalla.jpeg);
+  background-color: rgb(207, 229, 243);
 }
 
 .politica {

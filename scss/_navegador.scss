@@ -12,7 +12,7 @@ nav{
 }
 @media(max-width:768px){
     .navegador{
-        background-color: #8f0bb4;
+        background-color: #b060ea;
     }
     .navegador .fa-bars{
         margin: 10px;
@@ -46,7 +46,6 @@ nav{
     /*position: fixed;*/
     top: 0%;
     display: flex;
-    justify-content: space-between;
     z-index: 1;
         ul{
             list-style: none;
@@ -58,43 +57,10 @@ nav{
                 text-decoration: none;
                 padding: 10px;
                 text-decoration: solid;
+                &:hover{
+                    color: blue;
+                    transition: 0.5s ease;
+                }
             }
         }
-}
-.search-form{
-    position: relative;
-    display: flex;
-    align-items: center;
-    height: 4.0rem;
-    z-index: -1;
-    input{
-        outline: none;
-        font-family: inherit;
-        border: none;
-        border-radius: 2rem;
-        width: 25rem;
-        font-size: 1.4rem;
-        padding: 0 2rem;
-        color: rgb(255, 0, 0);
-        cursor: pointer;
-        &::-webkit-search-cancel-button{
-            appearance: none;
-        }
-    }
-    .btn-search{
-        border: none;
-        font-size: 20px;
-        color: aliceblue;
-        border-radius: 100%;
-        background-color: rgb(198, 75, 217);
-        display: flex;
-        align-items: center;
-        height: 2.75rem;
-        width: 2.75rem;
-        padding: 1rem;
-        &:hover{
-            color: #ee33bf;
-            background-color: aqua;
-        }
-    }
 }

@@ -19,16 +19,6 @@
         font-size: 3rem;
     }
 }
-.customer-support{
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    
-}
-.content-customer-support{
-    display: flex;
-    flex-direction: column;
-}
 .container-logo{
     display: flex;
     align-items: center;
@@ -40,7 +30,7 @@
     }
     h1 a{
         text-decoration: none;
-        color: rgb(228, 38, 162);
+        color: rgb(155, 38, 228);
         font-size: 3rem;
         text-transform: uppercase;
         letter-spacing: -1px;
@@ -56,11 +46,19 @@
         padding-right: 1.1rem;
         padding-left: 2.0rem;
         border-right: 1px solid rgb(247, 24, 136);
+        &:hover{
+            color: rgb(38, 31, 241);
+            transition: .5s ease;
+        }
     }
     .fa-basket-shopping{
         font-size: 2rem;
         color: rgb(171, 28, 223);
         padding-left: .1rem;
+        &:hover{
+            color: rgb(38, 31, 241);
+            transition: .5s ease;
+        }
     }
 }
 .content-shopping-cart{
@@ -125,7 +123,7 @@
     margin: 0 auto;
     padding: 25rem 10rem;
     p{
-        color: blueviolet;
+        color: rgb(191, 152, 227);
         font-size: 1.2rem;
         margin-bottom: 1rem;
         font-weight: 500;

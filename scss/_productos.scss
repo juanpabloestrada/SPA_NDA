@@ -1,0 +1,200 @@
+.section{
+    padding: 100px 14%;
+}
+.home{
+    min-height: 100vh;
+    width: 100%;
+    background: url(../multimedia/img/naturaleza.jpg);
+    background-size: cover;
+    background-position: center top;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+.home-text {
+    h1{
+    padding-left: 25px;
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: .6rem;
+    margin-bottom: 1.4rem;
+    }
+    span{
+        font-size: 2.7rem;
+        color: rgb(0, 0, 0);
+    }
+}
+.home-text p{
+    padding-left: 25px;
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+    letter-spacing: 2rem;
+    color: rgb(99, 28, 125);
+}
+.btn{
+    padding-left: 25px;
+    display: inline-block;
+    padding: 13px 25px;
+    background: rgb(142, 10, 186);
+    color: rgb(242, 203, 240);
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all .35s ease;
+    &:hover{
+        background-color: rgb(198, 153, 196);
+        color: rgb(142, 10, 186);
+    }
+}
+.center-text{
+    padding-left: 25px;
+    text-align: center;
+    h2{
+        font-size: 2.5rem;
+    }
+}
+.featured-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    gap: 1.3rem;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+.row{
+    position: relative;
+    transition: all .35 ease;
+    img{
+        width: 100%;
+    }
+}
+.fea-text{
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    h5{
+        font-size: 19px;
+        letter-spacing: 2px;
+        margin-bottom: 1rem;
+        color: rgb(255, 0, 221);
+    }
+    p{
+        color: aqua;
+        font-size: 15px;
+        letter-spacing: 1px;
+        font-weight: 400;
+    }
+}
+.row .arrow{
+   position: absolute;
+   bottom: 40px;
+   left: 50px;
+   i{
+    height: 35px;
+    width: 35px;
+    background-color: aqua;
+    border-radius: 50%;
+    font-size: 20px;
+    color: pink;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .35s ease;
+   }
+}
+.row:hover{
+    transform: scale(0.9) translateY(-4px);
+    cursor: pointer;
+    i{
+        background-color: crimson;
+        color: chartreuse;
+    }
+}.cta{
+    height: 60vh;
+    width: 100%;
+    background: url(../multimedia/img/vainilla.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-top: 2vh;
+}
+.cta-text h6{
+    padding-left: 25px;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: .6px;
+    margin-bottom: 14px;
+}
+.cta-text h4{
+    padding-left: 25px;
+    font-size: 3.3rem;
+    line-height: 1.2;
+    letter-spacing: .6rem;
+    margin-bottom: 30px;
+}
+.new-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    gap: 1.3rem;
+    align-items: center;
+    margin-top: 4rem;
+    text-align: center;
+}
+.box{
+    position: relative;
+    transition: all .40s ease;
+    &:hover{
+        transform: scale(0.9) translate(-5px);
+        cursor: pointer;
+    }
+    img{
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+    h5{
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    h6{
+        font-size: 16px;
+        font-weight: 700;
+    }
+    h4{
+        font-size: 12px;
+    }
+}
+.sale{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 30px;
+    background-color: rgb(174, 50, 228);
+    color: rgb(244, 199, 236);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    &:hover{
+        background-color: rgb(244, 199, 236);
+        color: rgb(174, 50, 228);
+    }
+}
+@media (max-width: 1000px){
+    header{
+        padding: 7px 4%;
+        transition: .2s;    }
+    section{
+        padding: 80x 4%;
+        transition: .1s;
+    }
+}
