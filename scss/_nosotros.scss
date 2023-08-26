@@ -1,12 +1,87 @@
-.quienes-somos{
-    justify-content: space-around;
-    margin: 15px;  
+.content{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
 }
-.detras-magia{
-    justify-content: space-around;
-    margin: 15px;
+.logo{
+    text-align: center;
+    font-size: 3em;
+    span{
+        color: rgb(241, 53, 251);
+    }
 }
-.inspiracion{
-    justify-content: space-around;
-    margin: 15px;
+.contact-wraper{
+    box-shadow: 0 0 20px 0 rgba(253, 8, 8, 0.3);
+}
+.contact-wraper > * {
+    padding: 1em;
+}
+.contact-form{
+    background: rgb(255, 197, 245);
+    form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .block{
+            grid-column: 1 / 3;
+        }
+    }
+    form p{
+        margin: 0;
+        padding: 1em;
+    }
+}
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea{
+    width: 100%;
+    padding: .7em;
+    border: none;
+    color: blueviolet;
+    border-bottom: 1px solid purple;
+}
+.contact-form form button{
+    background: rgb(178, 71, 173);
+    color: white;
+    text-transform: uppercase;
+    padding: 1em;
+    &:hover{
+        background: rgb(115, 56, 198);
+        color: rgb(255, 0, 136);
+        transition: background-color .5s ease-out;
+    }
+}
+.contact-info{
+    background: rgb(228, 124, 228);
+    ul{
+        list-style: none;
+        padding: 0;
+        li{
+            padding: .3em;
+        }
+    }
+}
+.contact-info h4,
+.contact-info ul,
+.contact-info p{
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+@media(min-width: 700px){
+    body{
+        padding: 0 4rem;
+    }
+    .contact-wrapper{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact-wrapper > * {
+        padding: 2em;
+    }
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p{
+        padding: 1em;
+        text-align: left;
+    }
 }

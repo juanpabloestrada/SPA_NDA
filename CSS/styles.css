@@ -192,7 +192,7 @@ nav {
 .row .arrow i {
   height: 35px;
   width: 35px;
-  background-color: aqua;
+  background-color: rgb(255, 0, 212);
   border-radius: 50%;
   font-size: 20px;
   color: pink;
@@ -292,16 +292,6 @@ nav {
   color: rgb(174, 50, 228);
 }
 
-@media (max-width: 1000px) {
-  header {
-    padding: 7px 4%;
-    transition: 0.2s;
-  }
-  section {
-    padding: 80x 4%;
-    transition: 0.1s;
-  }
-}
 .spa-whats {
   position: fixed;
   height: 55px;
@@ -309,8 +299,8 @@ nav {
   line-height: 55px;
   bottom: 30px;
   right: 30px;
-  background: rgb(234, 62, 159);
-  color: azure;
+  background: rgb(255, 255, 255);
+  color: rgb(246, 4, 166);
   border-radius: 50px;
   text-align: center;
   font-size: 40px;
@@ -321,8 +311,8 @@ nav {
 
 .spa-whats:hover {
   text-decoration: none;
-  color: rgb(246, 4, 166);
-  background: white;
+  color: rgb(255, 255, 255);
+  background: rgb(246, 4, 166);
 }
 
 .content {
@@ -356,7 +346,7 @@ nav {
   grid-template-columns: 1fr 1fr;
 }
 .contact-form form .block {
-  grid-column: 1/3;
+  grid-column: 1/2;
 }
 .contact-form form p {
   margin: 0;
@@ -403,7 +393,7 @@ nav {
   margin: 0 0 1rem 0;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 770px) {
   body {
     padding: 0 4rem;
   }
@@ -428,98 +418,83 @@ nav {
   padding: 30px;
 }
 
-.grid-padre {
-  display: grid;
-  margin: 10px;
-  gap: 10px;
-  object-fit: cover;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: repeat(6, 200px);
-  grid-template-areas: "img1 img1 img2 img3" "img1 img1 img4 img4" "img5 img7 img7 img8" "img6 img7 img7 img8" "img9 img9 img9 img8" "img10 img11 img11 img12";
+.titulo {
+  text-align: center;
+  font-size: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.img1 {
-  grid-area: img1;
-  background-image: url(../multimedia/img/Spanda.jpg);
-  background-size: cover;
-  color: rgb(216, 11, 79);
+.slider-box {
+  width: 1280px;
+  height: auto;
+  margin: 50px auto 0;
+  overflow: hidden;
+}
+.slider-box ul {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 10px;
+  padding: 0;
+  width: 400%;
+  animation: slide 20s infinite alternate ease-in-out;
 }
-
-.img1 h3 {
-  font-size: 32px;
-}
-
-.img1 p {
-  font-size: 20px;
-  text-align: center;
-}
-
-.img1 {
-  grid-area: img1;
-}
-
-.img2 {
-  grid-area: img2;
-}
-
-.img3 {
-  grid-area: img3;
-}
-
-.img4 {
-  grid-area: img4;
-}
-
-.img5 {
-  grid-area: img5;
-}
-
-.img6 {
-  grid-area: img6;
-}
-
-.img7 {
-  grid-area: img7;
-}
-
-.img8 {
-  grid-area: img8;
-}
-
-.img9 {
-  grid-area: img9;
-}
-
-.img10 {
-  grid-area: img10;
-}
-
-.img11 {
-  grid-area: img11;
-}
-
-.img12 {
-  grid-area: img12;
-}
-
-.grid-padre img {
+.slider-box li {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  list-style: none;
+  position: relative;
 }
 
-.proximos-talleres {
+.slider-box img {
+  width: 100%;
+  height: 75%;
+  object-fit: auto;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+@media (max-width: 991px) {
+  body {
+    padding: 30px;
+  }
+  .slider-box {
+    width: 100%;
+  }
+}
+.img-talleres {
+  object-fit: cover;
+  position: relative;
+  border-radius: 50%;
+}
+
+.titulo-talleres {
   text-align: center;
-  color: #b2089c;
 }
 
 .container {
-  max-width: 120rem;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -955,21 +930,102 @@ nav {
   font-size: 1.5rem;
 }
 
-.quienes-somos {
-  justify-content: space-around;
-  margin: 15px;
+.content {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
 }
 
-.detras-magia {
-  justify-content: space-around;
-  margin: 15px;
+.logo {
+  text-align: center;
+  font-size: 3em;
+}
+.logo span {
+  color: rgb(241, 53, 251);
 }
 
-.inspiracion {
-  justify-content: space-around;
-  margin: 15px;
+.contact-wraper {
+  box-shadow: 0 0 20px 0 rgba(253, 8, 8, 0.3);
 }
 
+.contact-wraper > * {
+  padding: 1em;
+}
+
+.contact-form {
+  background: rgb(255, 197, 245);
+}
+.contact-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contact-form form .block {
+  grid-column: 1/3;
+}
+.contact-form form p {
+  margin: 0;
+  padding: 1em;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+  width: 100%;
+  padding: 0.7em;
+  border: none;
+  color: blueviolet;
+  border-bottom: 1px solid purple;
+}
+
+.contact-form form button {
+  background: rgb(178, 71, 173);
+  color: white;
+  text-transform: uppercase;
+  padding: 1em;
+}
+.contact-form form button:hover {
+  background: rgb(115, 56, 198);
+  color: rgb(255, 0, 136);
+  transition: background-color 0.5s ease-out;
+}
+
+.contact-info {
+  background: rgb(228, 124, 228);
+}
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+.contact-info ul li {
+  padding: 0.3em;
+}
+
+.contact-info h4,
+.contact-info ul,
+.contact-info p {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+@media (min-width: 700px) {
+  body {
+    padding: 0 4rem;
+  }
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .contact-wrapper > * {
+    padding: 2em;
+  }
+  .contact-info h4,
+  .contact-info ul,
+  .contact-info p {
+    padding: 1em;
+    text-align: left;
+  }
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;

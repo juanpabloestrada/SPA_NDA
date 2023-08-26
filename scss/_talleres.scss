@@ -4,49 +4,58 @@
     justify-content: center;
     padding: 30px;
 }
-.grid-padre{
-    display: grid;
-    margin: 10px;
-    gap: 10px;
-    object-fit: cover;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: repeat(6, 200px);
-    grid-template-areas: "img1 img1 img2 img3"
-                         "img1 img1 img4 img4"
-                         "img5 img7 img7 img8"
-                         "img6 img7 img7 img8"
-                         "img9 img9 img9 img8"
-                         "img10 img11 img11 img12";
-}
-.img1{
-    grid-area: img1;
-    background-image: url(../multimedia/img/Spanda.jpg);
-    background-size: cover;
-    color: rgb(216, 11, 79);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 10px;
-}
-.img1 h3{
-    font-size: 32px;
-}
-.img1 p{
-    font-size: 20px;
+.titulo{
     text-align: center;
+    font-size: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
-@for $i from 1 to 13 {
-    .img#{$i}{
-        grid-area: img#{$i} ;
+.slider-box{
+    width: auto;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+    ul{
+        display: flex;
+        padding: 0;
+        width: 400%;
+        animation: slide 20s infinite alternate ease-in-out;
     }
+    li{
+        width: 100%;
+        list-style: none;
+        position: relative;
     }
-.grid-padre img{
+}
+.slider-box img{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 75%;
+    object-fit: auto;
 }
-.proximos-talleres{
+@keyframes slide {
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+    25% { margin-left: -100%; }
+    45% { margin-left: -100%;}
+    50% { margin-left: -200%; }
+    70% { margin-left: -200%;}
+    75% { margin-left: -300%; }
+    100% { margin-left: -300%;}
+}
+@media(max-width: 991px){
+    body {
+        padding: 30px;
+
+    }
+    .slider-box {
+        width: 100%;
+    }
+}
+.img-talleres{
+    object-fit: cover;
+    position: relative;
+    border-radius: 50%;
+}
+.titulo-talleres{
     text-align: center;
-    color: #b2089c;
 }
