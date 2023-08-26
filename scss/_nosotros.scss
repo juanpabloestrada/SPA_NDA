@@ -52,13 +52,11 @@
     }
 }
 .contact-info{
-    background: rgb(228, 124, 228);
-    ul{
-        list-style: none;
-        padding: 0;
-        li{
-            padding: .3em;
-        }
+    img{
+        border-radius: 50%;
+        align-items: center;
+        height: auto;
+        width: auto;
     }
 }
 .contact-info h4,
