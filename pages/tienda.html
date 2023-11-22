@@ -1,41 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0"
-		/>
-		<title>Tienda</title>
-		<link rel="stylesheet" href="../CSS/styles.css" />
-	</head>
-	<body>
-	
-	    <nav class="navegador">
-			<i class="fa-solid fa-bars"></i>
-				<ul>
-					
-					<li><a href="../index.html">inicio</a></li>
-					<li><a href="./nosotros.html">nosotros</a></li>
-					<li><a href="./productos.html">productos</a></li>
-					<li><a href="./talleres.html">talleres</a></li>
-					<li><a href="./tienda.html">tienda</a></li>
-					<li><a href="./contacto.html">contacto</a></li>
-					<h1 class="ver-carrito" id="verCarrito">🛒 <span id="cantidadCarrito" class="cantidadCarrito"></span></h1>
-			</ul>
-		</nav>
-		<header>
-			<h1>Tienda</h1>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tienda</title>
+	<link rel="stylesheet" href="../CSS/styles.css">
+</head>
 
+<body>
+	<nav class="navegador">
+        <i class="fa-solid fa-bars"></i>
+            <ul>
+                
+                <li><a href="../index.html">inicio</a></li>
+                <li><a href="./nosotros.html">nosotros</a></li>
+                <li><a href="./productos.html">productos</a></li>
+                <li><a href="./talleres.html">talleres</a></li>
+                <li><a href="./tienda.html">tienda</a></li>
+                <li><a href="./contacto.html">contacto</a></li>
+        </ul>
+		<h1 class="ver-carrito" id="verCarrito">🛒 <span id="cantidadCarrito" class="cantidad-carrito"></span> </h1>
+    </nav>
+	<div>
+		<a href="https://wa.link/19niu2" class="spa-whats" target="_blank">
+			<i class="fa-brands fa-whatsapp"></i>
+		</a>
+	</div>
 
-		</header>
+	<div id="shopContent" class="shop-content"></div>
 
-		<div id="shopContent" class="shop-content"></div>
+	<div id="modal-container" class="modal-container"></div>
 
-		<div id="modal-container" class="modal-container"></div>
-
-
-		<script src="../JS/main.js"></script>
-	</body>
+	<script src="../js/products.js"></script>
+	<script src="../js/app.js"></script>
+	<script src="../js/carrito.js"></script>
+</body>
 </html>
