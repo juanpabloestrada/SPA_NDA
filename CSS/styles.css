@@ -1093,7 +1093,7 @@ body{
 .icon-cart{
     width: 40px;
     height: 40px;
-    stroke: #000;
+    stroke: #fd0000;
 }
 
 .icon-cart:hover{
@@ -1212,74 +1212,6 @@ header{
 }
 
 
-
-
-/* Main */
-/*.container-items{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.item{
-    border-radius: 10px;
-}
-
-.item:hover{
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
-}
-
-.item img{
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
-    transition: all .5s;
-}
-
-.item figure{
-    overflow: hidden;
-}
-
-.item:hover img{
-    transform: scale(1.2);
-}
-
-.info-product{
-    padding: 15px 30px;
-    line-height: 2;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.price{
-    font-size: 18px;
-    font-weight: 900;
-}
-
-.info-product button{
-    border: none;
-    background: none;
-    background-color: #000;
-    color: #fff;
-    padding: 15px 10px;
-    cursor: pointer;
-}
-
-.cart-empty{
-    padding: 20px;
-    text-align: center;
-}
-
-
-.hidden{
-    display: none;
-}*/
-
-
-/*product cards*/
-
 .shop-content {
   display: flex;
   justify-content: space-around;
@@ -1289,7 +1221,7 @@ header{
   margin-right: 80px;
 }
 .card {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(242, 58, 199, 0.29);
   max-width: 300px;
   margin: auto;
   margin-top: 20px;
@@ -1303,7 +1235,7 @@ header{
 }
 
 .price {
-  color:  grey;
+  color:  rgb(233, 88, 246);
   font-size: 22px;
 }
 
@@ -1312,7 +1244,7 @@ header{
   outline: 0;
   padding: 12px;
   color: white;
-  background-color: #f24def;
+  background-color: #ff5cf1;
   text-align: center;
   cursor: pointer;
   width: 100%;
@@ -1329,7 +1261,7 @@ header{
   margin: 0 10%;
   max-height: 88vh;
   color: #fff;
-  background-color: #000;
+  background-color: #e561ff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1346,7 +1278,7 @@ header{
 .modal-header {
   display: flex;
   justify-content: space-around;
-  background-color: #000;
+  background-color: rgb(241, 127, 210);
   color: #fff;
   width: 100%;
 }
@@ -1385,7 +1317,7 @@ header{
 }
 
 .cantidad-carrito {
-  background-color: red;
+  background-color: rgb(234, 132, 212);
   color: #fff;
   border-radius: 50%;
   font-size: 12px;
